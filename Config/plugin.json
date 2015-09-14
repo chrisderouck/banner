@@ -1,0 +1,16 @@
+{
+	"name": "Banner",
+	"description": "Croogo Banner Plugin",
+
+	"author": "Chris De Rouck",
+	"authorEmail": "chris@2minds.be",
+	"authorUrl": "http://www.2minds.be",
+
+	"dependencies": {
+		"plugins": [
+			"acl",
+			"extensions",
+		  	"assets"
+		]
+	}
+}

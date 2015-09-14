@@ -1,0 +1,41 @@
+# Croogo: Banner Plugin
+
+**Banner** is a free, open source, event manager that sits on top of the Croogo content management system for PHP, released under [MIT License].
+
+It is powered by [CakePHP](http://cakephp.org) MVC framework.
+
+## Requirements
+  * Apache with mod_rewrite
+  * PHP 5.2 or higher
+  * MySQL 4.1 or higher
+  * Croogo 2.0 or higher
+
+## Installation
+
+#### Web based installer
+
+  * Upload the .zip file through Croogo's extension manager.
+
+#### Dependencies
+
+  * Install the Croogo Assets plugin (https://github.com/xintesa/Assets) to add assets to your event
+
+#### Manual installation
+
+  * Extract the archive. Upload the content to your Croogo installation in the ./app/Plugins/Event directory.
+  `# git clone https://github.com/chrisderouck/banner.git ./app/Plugin/Banner`
+  * visit Croogo's extension system to "activate" the plugin.
+
+## Usage
+
+  * Create a node for a certain type
+  * Add a featuredImage throughs Assets Plugin
+  * Create a block with a selector in the content field which has your nodes e.g.
+        [node:banner-head conditions=Node.type:blog;Node.status:1 order=Node.id DESC; limit=3 element=Banner.photo-banner]
+  * Make sure your block is loaded somewhere in your layout
+
+## Links
+
+  * **Official website**: [http://www.2minds.be](http://www.2minds.be/)
+  * **Downloads**: [https://github.com/chrisderouck/banner/downloads](https://github.com/chrisderouck/banner/downloads)
+  
