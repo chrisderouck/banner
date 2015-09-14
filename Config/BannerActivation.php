@@ -8,7 +8,7 @@
  * @author   Chris De Rouck <chris@2minds.be>
  * @license  http://www.opensource.org/licenses/mit-license.php The MIT License
  */
-class EventActivation {
+class BannerActivation {
 
 	public function beforeActivation(Controller $controller) {
 		return true;
@@ -37,7 +37,6 @@ class EventActivation {
 	}
 
 	public function onDeactivation(Controller $controller) {
-        // Remove block for upcoming events
         $controller->loadModel('Block');
         $block = $controller->Block->findByAlias('banner-head');
 
